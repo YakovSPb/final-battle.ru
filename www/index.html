@@ -205,15 +205,14 @@
         </div>
         <div class="row">
             <div class="col-lg-10 m-auto">
-            <form action="#" class="form">
-                <input type="text" placeholder="Напишите мне сообщение" class="form__input rounded" required>
-                <button type="submit" class="form__btn  rounded">Отправить</button>
+            <form action="mail.php" method="post" class="form">
+                <input name="message" type="text" placeholder="Напишите мне сообщение" class="form__input rounded" required>
+                <button type="submit" name="submit" value=submit" class="form__btn  rounded">Отправить</button>
             </form>
             </div>
         </div>
     </div>
 </section>
-
 
 
     <section class="counter">
@@ -246,8 +245,8 @@
         </div>
     </div>
 </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/slider.js"> </script>
 </body>
 </html>
