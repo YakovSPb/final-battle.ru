@@ -1,0 +1,300 @@
+/* СПЕЦИФИКАЦИЯ */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, .slay {
+    font-weight: 700;
+    color: #000;
+}
+h3 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align:center;
+}
+
+.title {
+ padding-top: 100px;
+    padding-bottom: 70px;
+    text-align:center;
+}
+.title__main {
+font-size: 32px;
+
+}
+
+.title__text {
+    font-size: 20px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+.dark_yellow{
+    color:#e9bd8e;
+}
+
+/* ПЕРВЫЙ ЭКРАН */
+
+.header {
+    background:#e9bd8e;
+    color: #010101;
+    padding-top: 57px;
+}
+.name {
+    margin-left:15px;
+    font-style:italic;
+    font-family: "Arial Black";
+}
+.menu {
+margin-top: 10px;
+}
+
+.menu__item{
+    margin: 0 57px;
+}
+
+.menu__item a{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+.menu__item a:hover {
+    text-decoration: none;
+    color:white;
+    transition: all 0.5s ease;
+}
+
+ul .slides li {
+    position:relative;
+}
+
+ul .slides li img {
+
+}
+.slay {
+    position: absolute;
+    top:30px;
+    margin-left: 40px;
+
+    color:#fff;
+    padding:10px;
+    font-size: 37px;
+
+    background:padding-box rgba(0, 0, 0, 0.6);
+}
+.slay2 {
+    position: absolute;
+    top:350px;
+    margin-left: 40px;
+
+    color:#fff;
+    padding:10px;
+    font-size: 37px;
+
+    background:padding-box rgba(0, 0, 0, 0.6);
+}
+
+
+    /* ВТОРОЙ ЭКРАН */
+
+.feature {
+    margin-bottom: 76px;
+
+}
+.feature i{
+
+    transition: all 0.5s ease;
+}
+.feature i:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.feature__icon {
+    font-size: 50px;
+    margin-right: 37px;
+    color:#000;
+}
+
+.feature__text{
+    color: #898989;
+}
+
+/* МЕЖДЫ ВТОРОЙ И ТРЕТЬЕЙ */
+.video {
+    background: #e9bd8e;
+    padding: 40px 0;
+}
+embed, iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ТРЕТИЙ ЭКРАН */
+.touch {
+    background: #010101;
+    color: #fff;
+    padding-bottom: 59px;
+    }
+.form {
+text-align:center;
+}
+.form__input {
+background: #fff;
+    font-size:16px;
+    font-family: 'PT Sans', sans-serif;
+    width:580px;
+    padding: 14px 0;
+    margin-right: 21px;
+    border: 0;
+    padding-left: 23px;
+    outline: none;
+    }
+.form__btn {
+    font-family: 'PT Sans', sans-serif;
+    background: #fcdb00;
+    color:#000;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 126px;
+    border: 0;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.form__btn:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+
+}
+
+
+    /* ЧЕТВЕРТЫЙ ЭКРАН */
+.counter {
+    background:#e9bd8e;
+    position: relative
+    }
+
+
+.counter__header{
+    position: relative;
+    top:266px;
+    text-align:center;
+}
+.counter__header h2 {
+    padding-bottom:5px;
+}
+
+/* FOOTER */
+.footer{
+    background: #000;
+  }
+.credits{
+   color:#fff;
+    font-size: 16px;
+    text-align:center;
+    padding: 50px 94px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 1196px) {
+    .logo{
+        display: block;
+        margin: 0 auto;
+    }
+    .name {
+        display:block;
+        text-align:center;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .header {
+        padding-top: 15px
+    }
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+    .name {
+        display:block;
+        text-align:center;
+    }
+
+    .slay2 {
+        position: absolute;
+        top: 20px;
+    }
+    .title__text{
+        width:90%;
+    }
+
+    .form__input {
+        margin-right:0;
+        width: 100%;
+    }
+    .form__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .counter__header {
+       top:180px;
+    }
+}
+
+
+@media screen and (max-width: 748px) {
+    .counter__header{
+        position:static;
+      magrin-left:-30px;
+    }
+
+    .timer-element:last-child {
+        display:none!important;
+    }
+    .slay, .slay2{
+        font-size:18px;
+        top:150px;
+       }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .timer-element:nth-child(n+2) {
+        display:none!important;
+
+    }
+    .menu {
+      flex-direction:column;
+    }
+    .slay, .slay2{
+        font-size:14px;
+        top:10px;
+    }
+    .hour {
+        display:none;
+    }
+    .flex-control-nav {
+        bottom: -47px;
+    }
+}
+
