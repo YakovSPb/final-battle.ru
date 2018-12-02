@@ -49,10 +49,13 @@ font-size: 32px;
     color: #010101;
     padding-top: 57px;
 }
+.logo {
+    width:50px;
+}
 .name {
     margin-left:15px;
     font-style:italic;
-    font-family: "Arial Black";
+    font-family: "Arial Black", serif;
 }
 .menu {
 margin-top: 10px;
@@ -217,7 +220,7 @@ background: #fff;
     .logo{
         display: block;
         margin: 0 auto;
-    }
+           }
     .name {
         display:block;
         text-align:center;
@@ -264,7 +267,7 @@ background: #fff;
 @media screen and (max-width: 748px) {
     .counter__header{
         position:static;
-      magrin-left:-30px;
+
     }
 
     .timer-element:last-child {
